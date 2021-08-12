@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-07 02:12:07 "/>
+        <attribute name="created" value="QWRtaW5pc3RyYWRvcjtFU0NSSVRPUklPOzIwMjEtMDgtMDc7IjEyOjE0OjQzICI7MzMyMg=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYWRvcjtFU0NSSVRPUklPOzIwMjEtMDgtMDc7IjAyOjEyOjA3ICI7NDszNDMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4, media" type="Real" array="False" size=""/>
+            <declare name="nomealuno, serie, turma" type="String" array="False" size=""/>
+            <output expression="&quot;Qual &#233; o nome do aluno?&quot;" newline="True"/>
+            <input variable="nomealuno"/>
+            <output expression="&quot;Qual &#233; a serie?&quot;" newline="True"/>
+            <input variable="serie"/>
+            <output expression="&quot;Qual &#233; a turma?&quot;" newline="True"/>
+            <input variable="turma"/>
+            <output expression="&quot;Informe suas 4 notas&quot;" newline="True"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <input variable="n4"/>
+            <assign variable="media" expression="(n1+n2+n3+n4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;Parabens, &quot; &amp; nomealuno &amp; &quot; do &quot;&amp; serie &amp; &quot; ano &quot; &amp; turma &amp; &quot; ,vc foi APROVADO, segue sua Media Final &quot; &amp;media" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Putz, mas tera que estudar mais &quot; &amp; nomealuno &amp; &quot; da &quot; &amp; serie &amp;&#13;&#10;&quot; serie &quot; &amp; turma &amp; &quot; ,vc foi REPROVADO, segue sua medida final &quot;&amp; media" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

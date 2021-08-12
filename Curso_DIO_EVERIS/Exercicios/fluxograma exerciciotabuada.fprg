@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-09 04:59:44 "/>
+        <attribute name="created" value="QWRtaW5pc3RyYWRvcjtFU0NSSVRPUklPOzIwMjEtMDgtMDg7IjEyOjM3OjU5ICI7MzMzNQ=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYWRvcjtFU0NSSVRPUklPOzIwMjEtMDgtMDk7IjA0OjU5OjQ0ICI7MjszNDQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicio, tabuada" type="Integer" array="False" size=""/>
+            <output expression="(&quot;escolha o numero de incio da tabuada&quot;)" newline="True"/>
+            <input variable="inicio"/>
+            <output expression="(&quot;Qual &#233; a tabuada desejada&quot;)" newline="True"/>
+            <input variable="tabuada"/>
+            <while expression="inicio &lt;=10">
+                <output expression="inicio * tabuada" newline="True"/>
+                <assign variable="inicio" expression="inicio+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

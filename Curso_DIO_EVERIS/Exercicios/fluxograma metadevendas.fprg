@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrador"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-07 01:31:12 "/>
+        <attribute name="created" value="QWRtaW5pc3RyYWRvcjtFU0NSSVRPUklPOzIwMjEtMDgtMDc7IjAxOjExOjMxICI7MzMxNA=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYWRvcjtFU0NSSVRPUklPOzIwMjEtMDgtMDc7IjAxOjMxOjEyICI7MjszNDI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, janeiro, fevereiro, marco, abril" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="media" expression="(janeiro+fevereiro+marco+abril)/4"/>
+            <if expression="media=5000">
+                <then>
+                    <output expression="&quot;Parabens vc atingiu a meta receber&#225; um bonus salaria de 10% este m&#234;s&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="media" newline="True"/>
+                    <output expression="&quot;Se esforce mais sei que vc consegue, sua meta este m&#234;s foi abaixo do combinado este m&#234;s recebera apenas 3% de comiss&#227;o das suas vendas&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

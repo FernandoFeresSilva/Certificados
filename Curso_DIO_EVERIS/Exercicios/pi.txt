@@ -1,0 +1,21 @@
+entra filhote azul
+entra pai azul
+gelo atravessa
+sai pai azul
+gelo atravessa
+entra filhote verde 
+gelo atravessa
+sai filhote azul
+gelo atravessa
+entra pai verde
+gelo atravessa
+sai pai verde
+gelo atravessa
+entra filhote vermelho
+gelo atravessa
+sai filhote verde
+gela atravessa
+entra pai vermelho
+gelo atravessa
+sai pai vermelho
+sai filhote vermelho
